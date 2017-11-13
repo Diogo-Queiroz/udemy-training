@@ -1,0 +1,23 @@
+body {
+    background: #d30fc0;
+}
+
+h1 {
+    color: #ff0000;
+    text-align: center;
+    text-shadow: 2px 4px 5px black;
+}
+
+p {
+    color: turquoise;
+}
+
+.header2 {
+    color: rgb(240, 134, 0);
+}
+
+#border {
+    color: lightseagreen;
+    background: darkslategrey;
+    border: 3px orangered solid;
+}
