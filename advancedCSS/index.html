@@ -3,19 +3,36 @@
     <head>
         <title>Advanced CSS</title>
         <link rel="stylesheet" href="/advancedCSS/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <nav>
-            <ul class="topnav">
+            <ul class="topnav" id="dropdown-menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#news">NEWS</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li class="topnav-right"><a href="#signup">SIGN UP</a></li>
                 <li class="topnav-right"><a href="#signin">SIGN IN</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="showMenu()">&#9776;</a></li>
             </ul>
         </nav>
         <h1>Advanced CSS</h1>
+
+        <script>
+            function showMenu()
+            {
+                var menu = document.getElementById("dropdown-menu");
+                if (menu.className === "topnav")
+                {
+                    menu.className += " responsive";
+                }
+                else 
+                {
+                    menu.className = "topnav";
+                }
+            }
+        </script>
     </body>
 </html>
