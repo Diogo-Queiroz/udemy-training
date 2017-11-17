@@ -13,7 +13,35 @@ body {
 .container {
     width: 100%;
     margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 /*######## Nav Bar ########*/
 nav {
@@ -56,7 +84,49 @@ ul.topnav li.dropdown-icon {
     display: none;
 }
 
+/*##### Custom Styles ####*/
 
+.gradient-background {
+    background: #076dff;
+    background: linear-gradient(to top, #076dff, #65a5ff);
+    background: -webkit-linear-gradient(to top, #076dff, #65a5ff);
+    background: -o-linear-gradient(to top, #076dff, #65a5ff);
+    background: -moz-linear-gradient(to top, #076dff, #65a5ff);
+}
+
+.leftside-col {
+    margin-left: 30%;
+}
+
+.rightside-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    line-height: 40px;
+
+}
+
+input[type="text"], input[type="password"] { /* between brackets is a good practice to specify the type for only these have the styles */
+    font-size: 22px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid #65aadd;
+    border-radius: 7px;
+}
+
+form h2 {
+    color: #fff;
+}
 
 /*######## Mobile ########*/
 @media screen and (max-width: 680px)
@@ -88,5 +158,25 @@ ul.topnav li.dropdown-icon {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.leftside-col, div.rightside-col {
+        margin: 15px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 350px;
+    }
+
+    .video-container iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
     }
 }
