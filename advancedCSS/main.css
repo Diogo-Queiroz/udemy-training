@@ -1,3 +1,7 @@
+/*######## Imposts  ########*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
 /*######## Defaults ########*/
 nav,
 header,
@@ -8,6 +12,7 @@ footer {
 body {
     line-height: 1;
     margin: 0;
+    font-family: Quicksand;
 }
 
 .container {
@@ -94,6 +99,12 @@ ul.topnav li.dropdown-icon {
     background: -moz-linear-gradient(to top, #076dff, #65a5ff);
 }
 
+div.box {
+    
+    background: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+}
+
 .leftside-col {
     margin-left: 30%;
 }
@@ -122,6 +133,11 @@ input[type="text"], input[type="password"] { /* between brackets is a good pract
 input[type="text"]:focus, input[type="password"]:focus {
     border: 2px solid #65aadd;
     border-radius: 7px;
+}
+
+.header-section {
+    font-size: 65px;
+    text-align: center;
 }
 
 form h2 {
