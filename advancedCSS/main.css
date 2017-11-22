@@ -208,7 +208,7 @@ form h2 {
     }
 
     input[type="text"], input[type="password"] {
-        width: 350px;
+        width: 300px;
     }
 
     .video-container iframe {
