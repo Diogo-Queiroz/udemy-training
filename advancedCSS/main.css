@@ -117,6 +117,7 @@ div.box {
     text-align: center;
     padding: 36px 24px 40px 24px;
     margin: 24px;
+    border-radius: 7px;
     background: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 
                 0 2px 3px 0 rgba(0, 0, 0, .1);
@@ -125,6 +126,23 @@ div.box {
 
 div.icon {
     width: 100%;
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    border-radius: 7px;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+button.learn-more {
+    display: block;
+    margin: auto;
 }
 
 .leftside-col {
@@ -182,6 +200,8 @@ form h2 {
         position: absolute;
         top: 0;
         right: 0;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
     }
 
     ul.topnav.responsive {
@@ -198,9 +218,19 @@ form h2 {
         text-align: left;
     }
 
-    .col-6 {
+    .header-section {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .col-6, .col-4 {
         width: 100%;
         margin: 0;
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
     }
 
     div.leftside-col, div.rightside-col {
