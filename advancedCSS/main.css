@@ -25,6 +25,11 @@ p {
     line-height: 1.2;
 }
 
+article p {
+    font-size: 28px;
+    padding: 20px;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -126,6 +131,21 @@ div.box {
     
 }
 
+div.slope-icon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15),
+                 2px  2px 17px 2px rgba(0, 0, 0, 1);
+    /*
+    box-shadow: Horizontal //  Vertical
+                Blur       //  Spread 
+                rgba(
+                    Shadow Color, Background Color, 
+                    Box-Color, Transparency
+                );
+    */ 
+}
+
 div.icon {
     width: 100%;
 }
@@ -225,7 +245,11 @@ form h2 {
         text-align: center;
     }
 
-    .col-6, .col-4 {
+    article p {
+        font-size: 18px;
+    }
+
+    .col-6, .col-4, .col-5, .col-7 {
         width: 100%;
         margin: 0;
     }
@@ -233,6 +257,14 @@ form h2 {
     div.box {
         padding: 5px;
         display: block;
+    }
+
+    div.slope-icon {
+        margin: 10px;
+    }
+
+    div.slope-icon img {
+        width: 100%;
     }
 
     div.leftside-col, div.rightside-col {
