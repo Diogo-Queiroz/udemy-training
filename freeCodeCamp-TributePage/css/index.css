@@ -1,0 +1,15 @@
+body, h1 {
+  padding-top: 45px;
+}
+
+.bg-gray {
+  background-color: #ddd;
+}
+
+.wanted-card {
+  height: 190px;
+  width: 150px;
+  border: 1px solid gray;
+  margin-bottom: 4px;
+  border-radius: 7px;
+}
