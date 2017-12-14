@@ -1,18 +1,24 @@
-var altura = 6;
-var stairs = "**";
-var spaces = "";
+var linhas = 42;
+var textRow = "";
+var timeNow = Date.now();
 
-for (altura; altura > 0; altura--)
+for (var i = 0; i < linhas; i++)
 {
-    for (var y = altura; y > 0; y--)
+    var valor = 1;
+    for (var j = 1; j < (linhas - i); j++)
     {
-        spaces = spaces + " ";
+        textRow = textRow + " ";
+        //console.log(" ");
     }
-    for (var z = 0; z < altura; z++)
+    for (var k = 0; k <= i; k++)
     {
-        stairs = stairs + "*";
+        //console.log("   "+valor);
+        textRow = textRow + " " + valor;
+        valor = valor * (i - k) / (k + 1);
     }
-    console.log(spaces + stairs);
-    spaces = "**";
-    stairs = "";
+    console.log(textRow);
+    textRow = "";
 }
+
+var timeResult = timeNow - Date.now();
+console.log("The test take " + timeResult + "seconds");
