@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Intro to Javascript</title>
-
+        <title>Excercise - Percentage Calculator</title>
+        <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
+        <div class="container gradient-background">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="leftside-col">
+                        <h1 class="large">The Percentage Calculator</h1>
+                    </div>
+                    <form>
+                        Input a number called X:<br><br>
+                        <input type="number" id="X"><br><br>
+                        Input another number called Y:<br><br>
+                        <input type="number" id="Y"><br><br>
+                        <input type="submit" value="Calculate">
+                    </form>
+                    <h3 id="result">100%</h3>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
         <script>
             var name = document.getElementById("name");
 

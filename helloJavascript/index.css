@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+    line-height: 1;
+    margin: 0;
+    font-family: Quicksand;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.gradient-background {
+    background: #076dff;
+    background: linear-gradient(to top, #076dff, #65a5ff);
+    background: -webkit-linear-gradient(to top, #076dff, #65a5ff);
+    background: -o-linear-gradient(to top, #076dff, #65a5ff);
+    background: -moz-linear-gradient(to top, #076dff, #65a5ff);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    border-radius: 7px;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    line-height: 40px;
+
+}
+
+input {
+    font-size: 22px;
+    width: 150px;
+    min-width: 100px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
