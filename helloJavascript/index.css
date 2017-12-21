@@ -47,7 +47,7 @@ body {
     background: -moz-linear-gradient(to top, #076dff, #65a5ff);
 }
 
-button {
+.button {
     font-size: 32px;
     font-weight: 700;
     color: #fff;
@@ -57,6 +57,7 @@ button {
     display: block;
     text-align: center;
     margin: 5px;
+    width: 250px;
 }
 
 h1.large {
@@ -74,4 +75,14 @@ input {
     padding: 5px;
     border: 2px solid gray;
     border-radius: 7px;
+}
+
+select {
+    width: 250px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
 }

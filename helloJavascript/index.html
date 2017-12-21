@@ -5,30 +5,33 @@
         <link rel="stylesheet" href="index.css">
     </head>
 
-    <body>
-        <div class="container gradient-background">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <div class="leftside-col">
-                        <h1 class="large">The Percentage Calculator</h1>
-                    </div>
-                    <form>
-                        Input a number called X:<br><br>
-                        <input type="number" id="X"><br><br>
-                        Input another number called Y:<br><br>
-                        <input type="number" id="Y"><br><br>
-                        <input type="submit" value="Calculate">
-                    </form>
-                    <h3 id="result">100%</h3>
-                </div>
-                <div class="col-3"></div>
-            </div>
-        </div>
-        <script>
-            var name = document.getElementById("name");
-
-            
-        </script>
-    </body>
+	<body>
+		<div class="container gradient-background">
+			<div class="row">
+				<div class="col-3"></div>
+					<div class="col-6">
+						<div class="leftside-col">
+							<h1 class="large">The Percentage Calculator</h1>
+						</div>
+						<form id="form">
+							<select id="options">
+								<option value="1">What is Y% of X?</option>
+								<option value="2">X is Y% of what?</option>
+								<option value="3">what % of X is Y?</option>
+								<option value="4">X% of what is Y?</option>
+								<option value="5">Y% of X is what?</option>
+							</select><br><br>
+							First number:<br><br>
+							<input type="number" id="n1"><br><br>
+							Second number:<br><br>
+							<input type="number" id="n2"><br><br>
+							<input class="button" type="submit" value="Calculate">
+						</form>
+						<h3 id="result">100%</h3>
+					</div>
+				<div class="col-3"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>
