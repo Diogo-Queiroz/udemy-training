@@ -1,40 +1,67 @@
 var n1Field = document.getElementById("n1");
 var n2Field = document.getElementById("n2");
 var resultField = document.getElementById("result");
-var questionField = document.getElementById("options").value;
+var questionField = document.getElementById("options");
 var form = document.getElementById("form");
 
-function calculate(xValue, yValue, question) {
-	var p;
-	var x;
-	var y;
-
-	X * (P / 100) == Y;
-	X / Y == (P / 100);
-	Y / (P / 100) == X;
-
-	switch(question) {
-		case "Y% of X":
-			
-			p = (y / 100) * x;
-			break;
-		case "X is Y%":
-			break;
-		case "% of X is Y":
-			break;
-		case "X% of what is Y":
-			break;
-		case "Y% of what is X":
-			break;
-		default:
-			break;
+form.addEventListener("submit", function(event) {
+	alert(n1Field.value);
+	alert(n2Field.value);
+	alert(questionField.value);
+	
+	if (!n1Field.value || !n2Field.value || !questionField.value)
+	{
+		alert("Please fulfill all the requirements fields!");
 	}
-
-	resultField.innerText = p;
-	event.preventDefault;
-}
-
-form.addEventListener("submit", calculate(n1Field, n2Field, questionField, event));
+	else 
+	{
+		var p;
+		var x;
+		var y;
+		switch(questionField.value) 
+		{
+			case "1":
+				x = parseFloat(n1Field.value);
+				p = parseFloat(n2Field.value);
+				y = x * (p / 100);
+				resultField.innerHTML = "The " + p + "% of " + x + " is " + y;
+				// event.preventDefault();
+				break;
+			case "2":
+				y = parseFloat(n1Field.value);
+				p = parseFloat(n2Field.value);
+				x = y / (p / 100);
+				resultField.innerHTML = "The " + y + " is " + p + "% of " + x;
+				// event.preventDefault();
+				break;
+			case "3":
+				x = parseFloat(n1Field.value);
+				y = parseFloat(n2Field.value);
+				p = (x / y) * 100;
+				resultField.innerHTML = "The percentage of " + x + " over " + y + " is " + p + "%";
+				// event.preventDefault();
+				break;
+			case "4":
+				y = parseFloat(n1Field.value);
+				p = parseFloat(n2Field.value);
+				x = y / (p / 100);
+				resultField.innerHTML = "The " + y + " is " + p + "% of " + x;
+				// event.preventDefault();
+				break;
+			case "5":
+				x = parseFloat(n1Field.value);
+				p = parseFloat(n2Field.value);
+				y = x * (p / 100);
+				resultField.innerHTML = "The " + p + "% of " + x + " is " + y;
+				// event.preventDefault();
+				break;
+			default:
+				alert("Please choose one option to convert");
+				break;
+		}
+	}
+	event.preventDefault();
+});
 
 // form.addEventListener("submit", function(event) {
 	
