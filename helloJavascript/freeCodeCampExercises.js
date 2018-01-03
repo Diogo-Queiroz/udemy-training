@@ -173,6 +173,8 @@ console.log(destroyer(["tree", "hambuger", 53], "tree", 53)); // ["hamgurger"]
  * 
  * Array.prototype.sort() -> link(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
  */
+
+ /*
 function getIndexToIns(arr, num) 
 {
     var indexToIns = -1;
@@ -203,3 +205,37 @@ console.log(getIndexToIns([3, 10, 5], 3)); // 0.
 console.log(getIndexToIns([5, 3, 20, 3], 5)); // 2.
 console.log(getIndexToIns([2, 20, 10], 19)); // 2.
 console.log(getIndexToIns([2, 5, 10], 15)); // 3.
+*/
+
+// Setup Exercise Diff Two Arrays
+/**
+ * Compare two arrays and return a new array with any element
+ * found in only one of the two arrays, but not both. 
+*/
+function isBigEnough(value, array) {
+    return arr1.indexOf(value) >= 0;
+}
+
+function diffArray(arr1, arr2) {
+    var newArr = [];
+    var biggestArray = [];
+    var lowestArray = [];
+
+    if (arr1.length >= arr2.length) {
+        biggestArray = arr1;
+        lowestArray = arr2;
+    } else {
+        biggestArray = arr2;
+        lowestArray = arr1;
+    }
+
+    for (var i = 0; i < biggestArray.length; i++) {
+        if (biggestArray.indexOf(lowestArray[i]) == -1) {
+            newArr.concat(lowestArray[i]);
+        }
+    }
+    
+    return newArr;
+}
+
+console.log(diffArray([1,2,3,5], [1,2,3,4,5])); // 4
