@@ -1,0 +1,8 @@
+ID;CardName;AEON;Ec;Pw;Hp;Effect;ODT;ARCH;EXTRA
+1;Test 1;ERI;1;1;3;BattleCry;T;AGR;blabla
+2;Test 2;IRI;4;2;2;Aftermath;O;MID;test1
+3;Test 32;DAE;10;4;2;Echo;D;CTR;test3
+4;Test 897;MUR;7;1;1;Reckoning;O;CMB;test99
+5;Test 99;ZEN;5;2;1;Focus;T;CMB;test12
+6;Test 87;THE;6;3;7;Protect;D;CTR;test2
+7;Test 14;GAR;3;3;4;;T;AGR;test1
