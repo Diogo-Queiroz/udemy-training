@@ -13,3 +13,15 @@ body.sigin-body {
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+img.sigin-img {
+    padding: 0 2rem 2rem;
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+form.sigin-form {
+    max-width: 350px;
+    margin: auto;
+}
