@@ -1,12 +1,12 @@
-body.sigin-body {
+body.signin-body {
     background-color: #E6F2FF;
 }
 
-.container.sigin-container {
+.container.signin-container {
     margin-top: 8%;
 }
 
-.card.sigin-card {
+.card.signin-card {
     padding: 40px 0px 20px;
     background-color: #F4F4F4;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -14,14 +14,39 @@ body.sigin-body {
     -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-img.sigin-img {
+img.signin-img {
     padding: 0 2rem 2rem;
     margin: auto;
     display: block;
     width: 70%;
 }
 
-form.sigin-form {
+form.signin-form {
     max-width: 350px;
     margin: auto;
+}
+
+button.signin-btn {
+    width: 100%;
+    color: #FFF;
+    border-color: #D64829;
+    background-color: #D64829;
+}
+
+a.signin-link-need-help {
+    font-weight: bold;
+    font-style: italic;
+}
+
+a.create-new-account {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+    img.signin-img {
+        width: 100%;
+    }
 }
