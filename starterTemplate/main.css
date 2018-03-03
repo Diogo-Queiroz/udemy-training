@@ -18,7 +18,6 @@ img.signin-img {
     padding: 0 2rem 2rem;
     margin: auto;
     display: block;
-    width: 70%;
 }
 
 form.signin-form {
@@ -43,10 +42,4 @@ a.create-new-account {
     text-align: center;
     font-size: 1.2rem;
     margin-top: 15px;
-}
-
-@media (max-width: 992px) {
-    img.signin-img {
-        width: 100%;
-    }
 }
