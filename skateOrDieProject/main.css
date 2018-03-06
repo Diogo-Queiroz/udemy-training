@@ -1,0 +1,34 @@
+.jumbotron {
+    text-align: center;
+    background: none;
+}
+
+.section-ligth {
+    background-color: #ECEEEF;
+    padding: 2rem;
+}
+
+.section-dark {
+    background-color: #CCCCCC;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.section-two-text {
+    font-size: 14px;
+}
+
+.section-two-img {
+
+}
+
+.cool-stuff-wrapper {
+    margin-top: 12px;
+}
+
+button.cool-stuff-btn {
+    color: #FFFFFF;
+    background-color: #FF0000;
+    display: block;
+    margin: auto;
+}
