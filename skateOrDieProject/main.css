@@ -32,3 +32,7 @@ button.cool-stuff-btn {
     display: block;
     margin: auto;
 }
+
+h5.modal-title {
+    margin: auto;
+}
