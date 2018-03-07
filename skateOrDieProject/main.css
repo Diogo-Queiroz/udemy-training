@@ -36,3 +36,20 @@ button.cool-stuff-btn {
 h5.modal-title {
     margin: auto;
 }
+
+.form-wrapper {
+    padding: 2rem;
+}
+
+img.img-center {
+    display: block;
+    margin: auto;
+}
+
+button.btn-center {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 82%;
+}
