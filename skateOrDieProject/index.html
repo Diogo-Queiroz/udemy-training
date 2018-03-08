@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="main.css">
 
@@ -136,7 +137,7 @@
                 <img class="img-fluid img-center" src="./assets/kickflip.jpg">
                 <div class="row">
                   <div class="col-sm-12">
-                    <button class="btn btn-lg btn-danger btn-center">Kickflip</button>
+                    <button class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".kf-modal-lg">Kickflip</button>
                   </div>
                 </div>
               </div>
@@ -144,7 +145,7 @@
                 <img class="img-fluid img-center" src="./assets/360flip.jpg">
                 <div class="row">
                   <div class="col-sm-12">
-                    <button class="btn btn-lg btn-danger btn-center">360 Flip</button>
+                    <button class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".360-modal-md">360 Flip</button>
                   </div>
                 </div>
               </div>
@@ -152,7 +153,7 @@
                 <img class="img-fluid img-center" src="./assets/bscrook.jpg">
                 <div class="row">
                   <div class="col-sm-12">
-                    <button class="btn btn-lg btn-danger btn-center">BS Crook</button>
+                    <button class="btn btn-lg btn-danger btn-center" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
                   </div>
                 </div>
               </div>
@@ -161,6 +162,19 @@
         </div>
       </div>
     </div> <!-- end div of container-fluid -->
+    <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-ls-3">
+            <img class="img-fluid img-footer" src="./assets/KFS_LIGHT.png">
+          </div>
+          <div class="col-sm-12 col-lg-9">
+            <i class="fab fa-google-plus-g fa-7x"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="ExclusiveContent" tabindex="-1" role="dialog" aria-labelledby="ExclusiveContent" aria-hidden="true">
@@ -200,6 +214,55 @@
           <div class="modal-footer">
             <button type="button" class="btn" data-dismiss="modal">Close</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Three Section Modals -->
+    <!-- Kickflip Modal -->
+    <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy. Pop, flick, catch, land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+    <!-- 360 Modal -->
+    <div class="modal fade 360-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>360 flips are easy. Pop, scissor kick, catch, land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+    <!-- BSCrook Modal -->
+    <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+          </div>
+          <p>Backside Crooks are sick! Nollie in, nollie out! #BOOM</p>
         </div>
       </div>
     </div>
