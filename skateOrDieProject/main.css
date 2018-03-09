@@ -53,3 +53,22 @@ button.btn-center {
 img.img-footer {
     padding: 20px;
 }
+
+a.social-link {
+    margin: 5px;
+}
+
+.fa-facebook-square {
+    color: #3B5998;
+}
+.fa-google-plus-square {
+    color: #C32F10;
+}
+
+.fa-instagram {
+    color: #FFFFFF;
+}
+
+.social-wrapper {
+    margin: auto;
+}
