@@ -1,19 +1,12 @@
-/* line 4, C:/xampp/htdocs/Udemy/udemy-training/introSASS/_sass/styles.sass */
 body {
-  background-color: cadetblue;
-}
+  background-color: cadetblue; }
 
-/* line 7, C:/xampp/htdocs/Udemy/udemy-training/introSASS/_sass/styles.sass */
 h1 {
-  color: white;
-}
+  color: white; }
 
-/* line 10, C:/xampp/htdocs/Udemy/udemy-training/introSASS/_sass/styles.sass */
 span {
-  color: blue;
-}
+  color: blue; }
 
-/* line 13, C:/xampp/htdocs/Udemy/udemy-training/introSASS/_sass/styles.sass */
 .circle {
   background-color: darkred;
   margin-top: 150px;
@@ -21,17 +14,22 @@ span {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 9px #333333;
-}
+  box-shadow: 0 0 9px #333333; }
 
-/* line 22, C:/xampp/htdocs/Udemy/udemy-training/introSASS/_sass/styles.sass */
 .square {
   background-color: darkgreen;
   margin: auto;
   height: 150px;
   width: 150px;
   border: 1px solid #000000;
-  box-shadow: 0 0 15px #FFFFFF;
-}
+  box-shadow: 0 0 15px #FFFFFF; }
 
-/*# sourceMappingURL=../_styles/styles.map */
+.jumbotron {
+  text-align: center;
+  background: none; }
+
+.section-ligth {
+  background-color: #ECEEEF;
+  padding: 2rem; }
+
+/*# sourceMappingURL=styles.css.map */
