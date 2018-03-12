@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "../layouts_sass/layout-dir.css",
+	"sources": [
+		"../layouts_sass/layout-dir.sass",
+		"../layouts_sass/footer.sass",
+		"../layouts_sass/header.sass"
+	],
+	"sourcesContent": [
+		"@import \"footer\";\n@import \"header\";\n",
+		"#footer {\n    color: white;\n    background-color: #333333; }\n",
+		"#header {\n    padding: 20px;\n    width: 100%; }\n"
+	],
+	"mappings": ";ACAA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,KAAM;EACb,gBAAgB,EAAE,OAAQ;CAAG;;;ACFjC,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,IAAK;CAAG",
+	"names": []
+}
