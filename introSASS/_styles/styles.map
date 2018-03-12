@@ -5,8 +5,8 @@
 		"../_sass/styles.sass"
 	],
 	"sourcesContent": [
-		"$white-font-color: white;\n$span-font-color: blue;\n\nbody {\n  background-color: cadetblue; }\n\nh1 {\n  color: $white-font-color; }\n\nspan {\n  color: $span-font-color; }\n\n.circle {\n  background-color: darkred;\n  margin-top: 150px;\n  margin-left: 150px;\n  height: 250px;\n  width: 250px;\n  border-radius: 50%;\n  box-shadow: 0 0 9px #333333; }\n\n.square {\n  background-color: darkgreen;\n  margin: auto;\n  height: 150px;\n  width: 150px;\n  border: 1px solid #000000;\n  box-shadow: 0 0 15px #FFFFFF; }\n"
+		""
 	],
-	"mappings": ";AAGA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,SAAU;CAAG;;;AAEjC,AAAA,EAAE,CAAC;EACD,KAAK,EAPY,KAAK;CAOK;;;AAE7B,AAAA,IAAI,CAAC;EACH,KAAK,EATW,IAAI;CASM;;;AAE5B,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,OAAQ;EAC1B,UAAU,EAAE,KAAM;EAClB,WAAW,EAAE,KAAM;EACnB,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,KAAM;EACb,aAAa,EAAE,GAAI;EACnB,UAAU,EAAE,eAAgB;CAAG;;;AAEjC,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,SAAU;EAC5B,MAAM,EAAE,IAAK;EACb,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,iBAAkB;EAC1B,UAAU,EAAE,gBAAiB;CAAG",
+	"mappings": "",
 	"names": []
 }
