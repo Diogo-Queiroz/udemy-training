@@ -1,9 +1,9 @@
 {
 	"version": 3,
-	"file": "../base_sass/base-dir.css",
+	"file": "../../sass/base/base-dir.css",
 	"sources": [
-		"../base_sass/base-dir.sass",
-		"../base_sass/base.sass"
+		"../../sass/base/base-dir.sass",
+		"../../sass/base/base.sass"
 	],
 	"sourcesContent": [
 		"@import \"base\";\n",

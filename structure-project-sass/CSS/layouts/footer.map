@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "../layouts_sass/footer.css",
+	"file": "../../sass/layouts/footer.css",
 	"sources": [
-		"../layouts_sass/footer.sass"
+		"../../sass/layouts/footer.sass"
 	],
 	"sourcesContent": [
 		"#footer {\n    color: white;\n    background-color: #333333; }\n"

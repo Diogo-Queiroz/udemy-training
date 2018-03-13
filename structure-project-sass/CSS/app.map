@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "../sass/app.css",
+	"sources": [
+		"../sass/app.sass",
+		"../sass/base/base-dir.sass",
+		"../sass/base/base.sass",
+		"../sass/layouts/layout-dir.sass",
+		"../sass/layouts/footer.sass",
+		"../sass/layouts/header.sass",
+		"../sass/modules/modules-dir.sass",
+		"../sass/modules/button.sass",
+		"../sass/modules/navbar.sass"
+	],
+	"sourcesContent": [
+		"@import \"base/base-dir\";\n@import \"layouts/layout-dir\";\n@import \"modules/modules-dir\";\n",
+		"@import \"base\";\n",
+		"body {\n    width: 100%;\n    padding: 40px 50px; }\n",
+		"@import \"footer\";\n@import \"header\";\n",
+		"#footer {\n    color: white;\n    background-color: #333333; }\n",
+		"#header {\n    padding: 20px;\n    width: 100%; }\n",
+		"@import \"button\";\n@import \"navbar\";\n",
+		".btn-large {\n    padding: 30px 40px;\n    background-color: green;\n    color: white; }\n\n.btn-small {\n    padding: 10px 15px;\n    background-color: teal;\n    color: black; }\n",
+		".main-nav {\n    background-color: gray;\n    border: 1px solid black; }\n"
+	],
+	"mappings": ";AEAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,SAAU;CAAG;;;AEF1B,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,KAAM;EACb,gBAAgB,EAAE,OAAQ;CAAG;;;ACFjC,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,IAAK;CAAG;;;AEFnB,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,SAAU;EACnB,gBAAgB,EAAE,KAAM;EACxB,KAAK,EAAE,KAAM;CAAG;;;AAEpB,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,SAAU;EACnB,gBAAgB,EAAE,IAAK;EACvB,KAAK,EAAE,KAAM;CAAG;;;ACRpB,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,IAAK;EACvB,MAAM,EAAE,eAAgB;CAAG",
+	"names": []
+}

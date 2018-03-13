@@ -1,0 +1,15 @@
+/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/modules/button.sass */
+.btn-large {
+  padding: 30px 40px;
+  background-color: green;
+  color: white;
+}
+
+/* line 6, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/modules/button.sass */
+.btn-small {
+  padding: 10px 15px;
+  background-color: teal;
+  color: black;
+}
+
+/*# sourceMappingURL=../../css/modules/button.map */

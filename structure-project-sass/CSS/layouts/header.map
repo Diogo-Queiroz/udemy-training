@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "../layouts_sass/header.css",
+	"file": "../../sass/layouts/header.css",
 	"sources": [
-		"../layouts_sass/header.sass"
+		"../../sass/layouts/header.sass"
 	],
 	"sourcesContent": [
 		"#header {\n    padding: 20px;\n    width: 100%; }\n"

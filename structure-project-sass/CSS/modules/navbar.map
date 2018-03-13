@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../sass/modules/navbar.css",
+	"sources": [
+		"../../sass/modules/navbar.sass"
+	],
+	"sourcesContent": [
+		".main-nav {\n    background-color: gray;\n    border: 1px solid black; }\n"
+	],
+	"mappings": ";AAAA,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,IAAK;EACvB,MAAM,EAAE,eAAgB;CAAG",
+	"names": []
+}

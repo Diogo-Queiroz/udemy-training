@@ -1,10 +1,10 @@
 {
 	"version": 3,
-	"file": "../layouts_sass/layout-dir.css",
+	"file": "../../sass/layouts/layout-dir.css",
 	"sources": [
-		"../layouts_sass/layout-dir.sass",
-		"../layouts_sass/footer.sass",
-		"../layouts_sass/header.sass"
+		"../../sass/layouts/layout-dir.sass",
+		"../../sass/layouts/footer.sass",
+		"../../sass/layouts/header.sass"
 	],
 	"sourcesContent": [
 		"@import \"footer\";\n@import \"header\";\n",

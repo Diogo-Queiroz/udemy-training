@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "../base_sass/base.css",
+	"file": "../../sass/base/base.css",
 	"sources": [
-		"../base_sass/base.sass"
+		"../../sass/base/base.sass"
 	],
 	"sourcesContent": [
 		"body {\n    width: 100%;\n    padding: 40px 50px; }\n"
