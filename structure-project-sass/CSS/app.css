@@ -1,39 +1,39 @@
-/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/base/base.sass */
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/base/_base.sass */
 body {
   width: 100%;
   padding: 40px 50px;
 }
 
-/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/layouts/footer.sass */
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/layouts/_footer.sass */
 #footer {
   color: white;
   background-color: #333333;
 }
 
-/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/layouts/header.sass */
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/layouts/_header.sass */
 #header {
   padding: 20px;
   width: 100%;
 }
 
-/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/modules/button.sass */
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/modules/_button.sass */
 .btn-large {
   padding: 30px 40px;
   background-color: green;
   color: white;
 }
 
-/* line 6, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/modules/button.sass */
+/* line 6, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/modules/_button.sass */
 .btn-small {
   padding: 10px 15px;
   background-color: teal;
-  color: black;
+  color: grey;
 }
 
-/* line 1, D:/dev/UdemyCourses/udemy-training/structure-project-sass/sass/modules/navbar.sass */
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/structure-project-sass/SASS/modules/_navbar.sass */
 .main-nav {
   background-color: gray;
   border: 1px solid black;
 }
 
-/*# sourceMappingURL=../css/app.map */
+/*# sourceMappingURL=../CSS/app.map */
