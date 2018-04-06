@@ -3,20 +3,34 @@
 	"file": "../SASS/app.css",
 	"sources": [
 		"../SASS/app.sass",
+		"../SASS/_variables.sass",
+		"../SASS/_mixins.sass",
+		"../SASS/_extends.sass",
 		"../SASS/base/_base-dir.sass",
 		"../SASS/base/_base.sass",
 		"../SASS/layouts/_layouts-dir.sass",
 		"../SASS/layouts/_header.sass",
-		"../SASS/modules/_modules-dir.sass"
+		"../SASS/layouts/_sections.sass",
+		"../SASS/modules/_modules-dir.sass",
+		"../SASS/modules/_navbar.sass",
+		"../SASS/modules/_pro-img.sass",
+		"../SASS/modules/_alerts.sass"
 	],
 	"sourcesContent": [
-		"@import 'base/base-dir';\n@import 'layouts/layouts-dir';\n@import 'modules/modules-dir';\n",
+		"@import 'variables.sass';\n@import 'mixins.sass';\n@import 'extends.sass';\n@import 'base/base-dir';\n@import 'layouts/layouts-dir';\n@import 'modules/modules-dir';\n",
+		"$brand-primary: #00AA8D;\n$brand-secondary: #333333;\n$brand-dark: #008975;\n$brand-ligth: #EEEEEE;\n$brand-grey: grey;\n\n$font-stack-serif: Georgia, Times, serif;\n$font-stack-sans-serif: Helvetica, Arial, sans-serif;\n\n$font-base: 16px;\n$font-nav: 22px;\n$font-large: 40px;\n",
+		"@mixin border($shadow, $border) {\n    -webkit-box-shadow: $shadow;\n    -moz-box-shadow: $shadow;\n    box-shadow: $shadow;\n\n    border: $border; }\n\n@mixin radius($radius) {\n    -webkit-border-radius: $radius;\n    -moz-border-radius: $radius;\n    border-radius: $radius; }\n",
+		"",
 		"@import 'base';\n",
-		"$brand-ligth: #EEEEEE;\n$font-sans-serif: Georgia, Times, serif;\n\nbody {\n    margin: 0;\n    padding: 0; }\n\nh1 {\n    color: $brand-ligth;\n    font-family: $font-sans-serif; }\n",
-		"@import 'header';\n",
-		"$brand-dark: #008975;\n\n#header {\n    text-align: center;\n    display: block;\n    width: 100%;\n    background-color: $brand-dark; }\n",
-		""
+		"body {\n    margin: 0;\n    padding: 0; }\n\nh1 {\n    color: $brand-ligth;\n    font-family: $font-stack-serif; }\n",
+		"@import 'header';\n@import 'sections';\n",
+		"#header {\n    text-align: center;\n    display: block;\n    width: 100%;\n    background-color: $brand-dark;\n    h1 {\n        margin: 0;\n        padding: 10px 0; } }\n",
+		"#main-content {\n    width: 100%;\n    padding: 20px 30px;\n    box-sizing: border-box;\n    display: inline-block;\n    background-color: $brand-ligth; }\n",
+		"@import 'navbar';\n@import 'pro-img';\n@import 'alerts';\n",
+		"#main-nav {\n    display: block;\n    width: 100%;\n    background-color: $brand-primary;\n    padding: 10px 0 40px;\n    ul {\n        margin: 0;\n        padding: 0;\n        list-style-type: none;\n        li {\n            float: left;\n            margin-left: 30px;\n            a {\n                text-decoration: none;\n                font-size: $font-nav;\n                color: $brand-ligth;\n                &:hover {\n                    color: red; } } } } }\n",
+		".pro-img {\n    @include border(0 0 15px #555555, 1px solid $brand-primary);\n    @include radius(5px);\n    background-color: $brand-primary;\n    width: 22%;\n    height: 120px;\n    display: inline-block;\n    float: left;\n    margin: 15px; }\n",
+		".alert {\n    border: 1px solid $brand-secondary;\n    margin: 10px 0;\n    padding: 15px;\n    text-transform: uppercase;\n    @include radius(10px); }\n\n.success {\n    @extend .alert;\n    background-color: #4CAF50; }\n\n.warning {\n    @extend .alert;\n    background-color: #FFCC33; }\n\n.oh-dang {\n    @extend .alert;\n    background-color: red; }\n"
 	],
-	"mappings": ";AEGA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CAAG;;;AAElB,AAAA,EAAE,CAAC;EACC,KAAK,EARK,OAAO;EASjB,WAAW,EARG,OAAO,EAAE,KAAK,EAAE,KAAK;CAQH;;;AEPpC,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,MAAO;EACnB,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;EACZ,gBAAgB,EANP,OAAO;CAMgB",
+	"mappings": ";AKAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CAAG;;;AAElB,AAAA,EAAE,CAAC;EACC,KAAK,EJFK,OAAO;EIGjB,WAAW,EJAI,OAAO,EAAE,KAAK,EAAE,KAAK;CIAH;;;AENrC,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,MAAO;EACnB,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;EACZ,gBAAgB,ENFP,OAAO;CMKS;;;AAP7B,AAKI,OALG,CAKH,EAAE,CAAC;EACC,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,MAAO;CAAG;;;ACP3B,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,SAAU;EACnB,UAAU,EAAE,UAAW;EACvB,OAAO,EAAE,YAAa;EACtB,gBAAgB,EPFN,OAAO;COEgB;;;AELrC,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;EACZ,gBAAgB,ETHJ,OAAO;ESInB,OAAO,EAAE,WAAY;CAaiB;;;AAjB1C,AAKI,SALK,CAKL,EAAE,CAAC;EACC,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,eAAe,EAAE,IAAK;CASU;;;AAjBxC,AASQ,SATC,CAKL,EAAE,CAIE,EAAE,CAAC;EACC,KAAK,EAAE,IAAK;EACZ,WAAW,EAAE,IAAK;CAMQ;;;AAjBtC,AAYY,SAZH,CAKL,EAAE,CAIE,EAAE,CAGE,CAAC,CAAC;EACE,eAAe,EAAE,IAAK;EACtB,SAAS,ETJd,IAAI;ESKC,KAAK,ETZP,OAAO;CSce;;;AAjBpC,AAYY,SAZH,CAKL,EAAE,CAIE,EAAE,CAGE,CAAC,AAII,MAAM,CAAC;EACJ,KAAK,EAAE,GAAI;CAAG;;;ACjBlC,AAAA,QAAQ,CAAC;ETCL,kBAAkB,ESAF,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,OAAO;ETChC,eAAe,ESDC,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,OAAO;ETEhC,UAAU,ESFM,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,OAAO;ETIhC,MAAM,ESJ4B,GAAG,CAAC,KAAK,CVD/B,OAAO;ECQnB,qBAAqB,ESNL,GAAG;ETOnB,kBAAkB,ESPF,GAAG;ETQnB,aAAa,ESRG,GAAG;EACnB,gBAAgB,EVHJ,OAAO;EUInB,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,YAAa;EACtB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;CAAG;;;ACRpB,AAAA,MAAM,EAON,AAPA,QAOQ,EAIR,AAXA,QAWQ,EAIR,AAfA,QAeQ,CAfD;EACH,MAAM,EAAE,GAAG,CAAC,KAAK,CXAH,OAAO;EWCrB,MAAM,EAAE,MAAO;EACf,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,SAAU;EVI1B,qBAAqB,EUHL,IAAI;EVIpB,kBAAkB,EUJF,IAAI;EVKpB,aAAa,EULG,IAAI;CAAI;;;AAE5B,AAAA,QAAQ,CAAC;EAEL,gBAAgB,EAAE,OAAQ;CAAG;;;AAEjC,AAAA,QAAQ,CAAC;EAEL,gBAAgB,EAAE,OAAQ;CAAG;;;AAEjC,AAAA,QAAQ,CAAC;EAEL,gBAAgB,EAAE,GAAI;CAAG",
 	"names": []
 }
