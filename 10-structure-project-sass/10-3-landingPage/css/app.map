@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "../sass/app.css",
+	"sources": [
+		"../sass/app.sass",
+		"../sass/_variables.sass",
+		"../sass/_mixins.sass",
+		"../sass/base/_base-dir.sass",
+		"../sass/base/_base.sass",
+		"../sass/layouts/_layouts-dir.sass",
+		"../sass/layouts/_grid.sass",
+		"../sass/modules/_modules-dir.sass"
+	],
+	"sourcesContent": [
+		"@import 'variables.sass';\n@import 'mixins.sass';\n@import 'base/base-dir';\n@import 'layouts/layouts-dir';\n@import 'modules/modules-dir';\n",
+		"",
+		"",
+		"@import 'base';\n",
+		"",
+		"@import 'grid';\n",
+		".row {\n    display: flex;\n    width: 100%;\n    flex-wrap: wrap;\n    align-items: center; }\n\n.row::after {\n    display: table;\n    clear: both; }\n\n.col-1 {\n    width: 8.33%; }\n.col-2 {\n    width: 16.66%; }\n.col-3 {\n    width: 25%; }\n.col-4 {\n    width: 33.33%; }\n.col-5 {\n    width: 41.66%; }\n.col-6 {\n    width: 50%; }\n.col-7 {\n    width: 58.33%; }\n.col-8 {\n    width: 66.66%; }\n.col-9 {\n    width: 75%; }\n.col-10 {\n    width: 83.33%; }\n.col-11 {\n    width: 91.66%; }\n.col-12 {\n    width: 100%; }\n\n* {\n    box-sizing: content-box; }\n",
+		""
+	],
+	"mappings": ";AMAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,IAAK;EACZ,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,MAAO;CAAG;;;AAE3B,AAAI,IAAA,AAAA,OAAO,CAAC;EACR,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;CAAG;;;AAEnB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,KAAM;CAAG;;;AACpB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAI;CAAG;;;AAClB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAI;CAAG;;;AAClB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAI;CAAG;;;AAClB,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,MAAO;CAAG;;;AACrB,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,IAAK;CAAG;;;AAEnB,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,WAAY;CAAG",
+	"names": []
+}
