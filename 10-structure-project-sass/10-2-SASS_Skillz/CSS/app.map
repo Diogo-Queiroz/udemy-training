@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "../SASS/app.css",
+	"sources": [
+		"../SASS/app.sass",
+		"../SASS/base/_base-dir.sass",
+		"../SASS/base/_base.sass",
+		"../SASS/layouts/_layouts-dir.sass",
+		"../SASS/layouts/_header.sass",
+		"../SASS/modules/_modules-dir.sass"
+	],
+	"sourcesContent": [
+		"@import 'base/base-dir';\n@import 'layouts/layouts-dir';\n@import 'modules/modules-dir';\n",
+		"@import 'base';\n",
+		"$brand-ligth: #EEEEEE;\n$font-sans-serif: Georgia, Times, serif;\n\nbody {\n    margin: 0;\n    padding: 0; }\n\nh1 {\n    color: $brand-ligth;\n    font-family: $font-sans-serif; }\n",
+		"@import 'header';\n",
+		"$brand-dark: #008975;\n\n#header {\n    text-align: center;\n    display: block;\n    width: 100%;\n    background-color: $brand-dark; }\n",
+		""
+	],
+	"mappings": ";AEGA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CAAG;;;AAElB,AAAA,EAAE,CAAC;EACC,KAAK,EARK,OAAO;EASjB,WAAW,EARG,OAAO,EAAE,KAAK,EAAE,KAAK;CAQH;;;AEPpC,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,MAAO;EACnB,OAAO,EAAE,KAAM;EACf,KAAK,EAAE,IAAK;EACZ,gBAAgB,EANP,OAAO;CAMgB",
+	"names": []
+}

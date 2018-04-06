@@ -1,0 +1,21 @@
+/* line 4, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-2-SASS_Skillz/SASS/base/_base.sass */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-2-SASS_Skillz/SASS/base/_base.sass */
+h1 {
+  color: #EEEEEE;
+  font-family: Georgia, Times, serif;
+}
+
+/* line 3, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-2-SASS_Skillz/SASS/layouts/_header.sass */
+#header {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #008975;
+}
+
+/*# sourceMappingURL=../CSS/app.map */
