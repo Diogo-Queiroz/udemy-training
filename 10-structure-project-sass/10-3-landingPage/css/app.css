@@ -1,64 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/_extend.sass */
+.center-block, .b-video-img, .gear-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/base/_base.sass */
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .row {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+/* line 7, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .row::after {
-  display: table;
   clear: both;
+  display: table;
 }
 
+/* line 11, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-1 {
   width: 8.33%;
 }
 
+/* line 14, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-2 {
   width: 16.66%;
 }
 
+/* line 17, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-3 {
   width: 25%;
 }
 
+/* line 20, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-4 {
   width: 33.33%;
 }
 
+/* line 23, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-5 {
   width: 41.66%;
 }
 
+/* line 26, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-6 {
   width: 50%;
 }
 
+/* line 29, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-7 {
   width: 58.33%;
 }
 
+/* line 32, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-8 {
   width: 66.66%;
 }
 
+/* line 35, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-9 {
   width: 75%;
 }
 
+/* line 38, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-10 {
   width: 83.33%;
 }
 
+/* line 41, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-11 {
   width: 91.66%;
 }
 
+/* line 44, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 .col-12 {
   width: 100%;
 }
 
+/* line 48, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_grid.sass */
 * {
   box-sizing: content-box;
 }
-/*# sourceMappingURL=app.css.map */
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_containers.sass */
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 8, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_containers.sass */
+.banner-container {
+  color: #fff;
+  background-color: #212630;
+  padding: 40px 0;
+}
+
+/* line 13, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_containers.sass */
+.splitter-container {
+  padding: 50px 0 50px;
+  text-align: center;
+  background-color: #fffcfc;
+}
+
+/* line 18, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_containers.sass */
+.about-container {
+  font-family: "Courgette", sans-serif;
+  background-color: #f6f5f5;
+  padding: 70px 0;
+  min-height: 540px;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_banner.sass */
+.home-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: -50px 0 20px;
+  color: #cd4b3d;
+}
+
+/* line 7, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_banner.sass */
+.b-text {
+  font-size: 1.25rem;
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  padding-right: 25px;
+  line-height: 1.7;
+}
+
+/* line 15, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_banner.sass */
+.b-card {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #212630;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-left: 50px;
+}
+
+/* line 22, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_banner.sass */
+.b-card .b-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  color: #fffcfc;
+}
+
+/* line 27, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_banner.sass */
+.b-card .b-video {
+  margin: 0 auto 15px;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_about.sass */
+.about-title {
+  font-size: 2rem;
+  margin: 0 0 30px;
+  color: #212630;
+}
+
+/* line 6, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_about.sass */
+.about-text {
+  margin: 0 0 50px;
+  color: #363e4e;
+  letter-spacing: -.025rem;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+#page-footer {
+  clear: both;
+  background-color: #212630;
+  padding: 25px 0 40px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 9, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+.lego-footer {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fffcfc;
+}
+
+/* line 13, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+.lego-footer .footer-container {
+  padding: 0 10%;
+}
+
+/* line 15, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+.lego-footer .footer-container .footer-wrapper {
+  display: inline-block;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+/* line 21, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+.footer-link {
+  margin-right: 36px;
+  color: #fffcfc;
+  text-decoration: none;
+}
+
+/* line 25, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/layouts/_footer.sass */
+.footer-link:hover {
+  color: #cd4b3d;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-header {
+  background-color: #fff;
+  padding: 0 0 10px;
+}
+
+/* line 4, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-header .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px 0;
+}
+
+/* line 9, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-menu {
+  float: right;
+  margin: 5px 0 0;
+}
+
+/* line 12, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-menu .nav-menu-list {
+  font-size: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-menu .nav-menu-list .nav-item {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+/* line 21, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-menu .nav-menu-list .nav-item .nav-a {
+  border: 1px solid transparent;
+  color: #212630;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 28, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_navbar.sass */
+.nav-menu .nav-menu-list .nav-item .nav-a:hover {
+  color: #f00;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_images.sass */
+.b-video-img {
+  width: 100%;
+  padding: 40px 0 30px;
+}
+
+/* line 6, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_images.sass */
+.img-item {
+  margin: 0 30px 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_img-splitter.sass */
+.img-list {
+  margin: 0 -20px -40px;
+  padding: 0;
+}
+
+/* line 1, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all, 0.2s, ease-in-out;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* line 13, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.buy-btn-lg {
+  padding: 12px 0;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  width: 100%;
+}
+
+/* line 17, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.buy-btn-md {
+  padding: 18px 50px;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+/* line 20, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.btn-dark {
+  color: #f6f5f5;
+  background-color: #7a88a3;
+  border-color: #212630;
+}
+
+/* line 8, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/_mixins.sass */
+.btn-dark:hover {
+  color: #f6f5f5;
+  background-color: #5f6e8b;
+  border-color: #0c0e12;
+}
+
+/* line 23, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.btn-primary {
+  color: #f6f5f5;
+  background-color: #cd4b3d;
+  border-color: #cd4b3d;
+}
+
+/* line 8, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/_mixins.sass */
+.btn-primary:hover {
+  color: #f6f5f5;
+  background-color: #ab382c;
+  border-color: #ab382c;
+}
+
+/* line 26, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/modules/_buttons.sass */
+.btn-third {
+  color: #f6f5f5;
+  background-color: #cd4b3c;
+  border-color: #cd4b3c;
+}
+
+/* line 8, C:/xampp/htdocs/Udemy/udemy-training/10-structure-project-sass/10-3-landingPage/sass/_mixins.sass */
+.btn-third:hover {
+  color: #f6f5f5;
+  background-color: #aa392c;
+  border-color: #aa392c;
+}
+
+/*# sourceMappingURL=../css/app.map */
